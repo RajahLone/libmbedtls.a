@@ -14,9 +14,10 @@ Targets: 68000, 68020-060, 68040, ColdFire
    ```mkdir ./library```  
 
 - get [mbedtls-3.6.1.zip](https://ptonthat.fr/files/polarssl/mbedtls-3.6.1.zip), you'll need only to unpack  
-   ```./library/*.c``` and  
    ```./include/mbedtls/*.h``` and  
-   ```./include/psa/*.h``` to the present folders.  
+   ```./include/psa/*.h``` and  
+   ```./library/*.h``` and  
+   ```./library/*.c``` to the present folders.  
 
 - create includes folders in target,  
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/mbedtls```  

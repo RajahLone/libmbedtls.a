@@ -2,3 +2,10 @@
 build/*
 *.xcodeproj
 
+include/mbedtls/*.h
+!timing_alt.h
+!mbedtls_config.h
+include/psa/*.h
+library/*.h
+library/*.c
+!timing_alt.c
