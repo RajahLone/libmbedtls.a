@@ -11,7 +11,7 @@ RANLIB = $(CROSSPREFIX)ranlib
 STRIP = $(CROSSPREFIX)strip
 FLAGS = $(CROSSPREFIX)flags
 
-CFLAGS = -I../include -W -Wno-array-parameter -Wno-stringop-overflow
+CFLAGS = -I../include -W  
 
 OFLAGS = -Wall -O2 -fomit-frame-pointer
 
@@ -46,11 +46,6 @@ libmbedcrypto.a:
 	$(AR) s $@
 	cp libmbedcrypto.a $(DESTDIR)/lib/m5475/libmbedcrypto.a
 	rm -f *.o libmbedcrypto.a
-	$(CC) $(CFLAGS) -m68040 $(OFLAGS) -c $(PSA_OBJS)
-	$(AR) -rcs $@ *.o
-	$(AR) s $@
-	cp libmbedcrypto.a $(DESTDIR)/lib/m68040/libmbedcrypto.a
-	rm -f *.o libmbedcrypto.a
 
 libmbedx509.a:
 	$(CC) $(CFLAGS) -m68000 $(OFLAGS) -c $(X509_OBJS)
@@ -68,11 +63,6 @@ libmbedx509.a:
 	$(AR) s $@
 	cp libmbedx509.a $(DESTDIR)/lib/m5475/libmbedx509.a
 	rm -f *.o libmbedx509.a
-	$(CC) $(CFLAGS) -m68040 $(OFLAGS) -c $(X509_OBJS)
-	$(AR) -rcs $@ *.o
-	$(AR) s $@
-	cp libmbedx509.a $(DESTDIR)/lib/m68040/libmbedx509.a
-	rm -f *.o libmbedx509.a
 
 libmbedtls.a:
 	$(CC) $(CFLAGS) -m68000 $(OFLAGS) -c $(TLS_OBJS)
@@ -89,11 +79,6 @@ libmbedtls.a:
 	$(AR) -rcs $@ *.o
 	$(AR) s $@
 	cp libmbedtls.a $(DESTDIR)/lib/m5475/libmbedtls.a
-	rm -f *.o libmbedtls.a
-	$(CC) $(CFLAGS) -m68040 $(OFLAGS) -c $(TLS_OBJS)
-	$(AR) -rcs $@ *.o
-	$(AR) s $@
-	cp libmbedtls.a $(DESTDIR)/lib/m68040/libmbedtls.a
 	rm -f *.o libmbedtls.a
 
 clean:
