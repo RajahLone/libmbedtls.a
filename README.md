@@ -2,7 +2,7 @@
 
 From mbedtls 3.6.1 to /opt/cross-mint/m68k-atari-mint/lib/
 
-Targets: 68000, 68020-060, 68040, ColdFire
+Targets: 68000, 68020-060, ColdFire
 
 # installation for makefiles
 
