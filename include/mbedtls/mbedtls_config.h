@@ -206,7 +206,7 @@
  *
  * Enable this layer to allow use of alternative memory allocators.
  */
-#define MBEDTLS_PLATFORM_MEMORY
+//#define MBEDTLS_PLATFORM_MEMORY
 
 /**
  * \def MBEDTLS_PLATFORM_NO_STD_FUNCTIONS
@@ -2681,7 +2681,7 @@
  *
  * This module provides debugging functions.
  */
-#define MBEDTLS_DEBUG_C
+//#define MBEDTLS_DEBUG_C
 
 /**
  * \def MBEDTLS_DES_C
@@ -3079,7 +3079,7 @@
  *
  * This modules adds support for encoding / writing PEM files.
  */
-//#define MBEDTLS_PEM_WRITE_C
+#define MBEDTLS_PEM_WRITE_C
 
 /**
  * \def MBEDTLS_PK_C
@@ -3126,7 +3126,7 @@
  *
  * Uncomment to enable generic public key write functions.
  */
-//#define MBEDTLS_PK_WRITE_C
+#define MBEDTLS_PK_WRITE_C
 
 /**
  * \def MBEDTLS_PKCS5_C
@@ -3549,7 +3549,7 @@
  * Module:  library/ssl_cookie.c
  * Caller:
  */
-//#define MBEDTLS_SSL_COOKIE_C
+#define MBEDTLS_SSL_COOKIE_C
 
 /**
  * \def MBEDTLS_SSL_TICKET_C
@@ -3562,7 +3562,7 @@
  * Requires: (MBEDTLS_CIPHER_C || MBEDTLS_USE_PSA_CRYPTO) &&
  *           (MBEDTLS_GCM_C || MBEDTLS_CCM_C || MBEDTLS_CHACHAPOLY_C)
  */
-//#define MBEDTLS_SSL_TICKET_C
+#define MBEDTLS_SSL_TICKET_C
 
 /**
  * \def MBEDTLS_SSL_CLI_C
@@ -3757,7 +3757,7 @@
  *
  * This module is required for X.509 certificate creation.
  */
-//#define MBEDTLS_X509_CRT_WRITE_C
+#define MBEDTLS_X509_CRT_WRITE_C
 
 /**
  * \def MBEDTLS_X509_CSR_WRITE_C
@@ -3770,7 +3770,7 @@
  *
  * This module is required for X.509 certificate request writing.
  */
-//#define MBEDTLS_X509_CSR_WRITE_C
+#define MBEDTLS_X509_CSR_WRITE_C
 
 /** \} name SECTION: Mbed TLS modules */
 
