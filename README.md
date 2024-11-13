@@ -23,7 +23,7 @@ Targets: 68000, 68020-060, ColdFire
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/mbedtls```  
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/psa```  
 
-- get [mbedtls_r2_src.zip](https://ptonthat.fr/files/polarssl/sources/libmbedtls.a.r2.zip) and unpack the contents of /libmdbedtls.a/ to  
+- get [libmbedtls.a.r2.zip](https://ptonthat.fr/files/polarssl/sources/libmbedtls.a.r2.zip) and unpack the contents of /libmdbedtls.a/ to  
    ```./README.md```  
    ```./Makefile```  
    ```./include/mbedtls/mbedtls_config.h```  
