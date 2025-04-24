@@ -1,6 +1,6 @@
 # libmbedtls.a, libmbedcrypto.a, libmbedx509.a
 
-From mbedtls 3.6.2 to /opt/cross-mint/m68k-atari-mint/lib/
+From mbedtls 3.6.3 to /opt/cross-mint/m68k-atari-mint/lib/
 
 Targets: 68000, 68020-060, ColdFire
 
@@ -13,7 +13,7 @@ Targets: 68000, 68020-060, ColdFire
    ```mkdir ./include/psa```  
    ```mkdir ./library```  
 
-- get [mbedtls-3.6.2.zip](https://ptonthat.fr/files/polarssl/mbedtls-3.6.2.zip), you'll need only to unpack  
+- get [mbedtls-3.6.3.zip](https://ptonthat.fr/files/polarssl/mbedtls-3.6.3.zip), you'll need only to unpack  
    ```./include/mbedtls/*.h``` and  
    ```./include/psa/*.h``` and  
    ```./library/*.h``` and  
@@ -23,7 +23,7 @@ Targets: 68000, 68020-060, ColdFire
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/mbedtls```  
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/psa```  
 
-- get [libmbedtls.a.r2.zip](https://ptonthat.fr/files/polarssl/sources/libmbedtls.a.r2.zip) and unpack the contents of /libmdbedtls.a/ to  
+- get [libmbedtls.a.r3.zip](https://ptonthat.fr/files/polarssl/sources/libmbedtls.a.r3.zip) and unpack the contents of /libmdbedtls.a/ to  
    ```./README.md```  
    ```./Makefile```  
    ```./include/mbedtls/mbedtls_config.h```  
@@ -32,4 +32,4 @@ Targets: 68000, 68020-060, ColdFire
    ```./library/timing_alt.c```  
    ```./libmbedtls.xcodeproj```  
 
-- libmbedtls.xcodeproj is for Xcode 16.0, you may not need it if you use something else.
+- libmbedtls.xcodeproj is for Xcode 16.3, you may not need it if you use something else.
