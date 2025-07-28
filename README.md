@@ -1,6 +1,6 @@
 # libmbedtls.a, libmbedcrypto.a, libmbedx509.a
 
-From mbedtls 3.6.3 to /opt/cross-mint/m68k-atari-mint/lib/
+From mbedtls 3.6.4 to /opt/cross-mint/m68k-atari-mint/lib/
 
 Targets: 68000, 68020-060, ColdFire
 
@@ -13,7 +13,7 @@ Targets: 68000, 68020-060, ColdFire
    ```mkdir ./include/psa```  
    ```mkdir ./library```  
 
-- get [mbedtls-3.6.3.zip](https://ptonthat.fr/files/polarssl/mbedtls-3.6.3.zip), you'll need only to unpack  
+- get [mbedtls-3.6.4.zip](https://ptonthat.fr/files/polarssl/mbedtls-3.6.4.zip), you'll need only to unpack  
    ```./include/mbedtls/*.h``` and  
    ```./include/psa/*.h``` and  
    ```./library/*.h``` and  
@@ -23,7 +23,7 @@ Targets: 68000, 68020-060, ColdFire
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/mbedtls```  
    ```mkdir /opt/cross-mint/m68k-atari-mint/include/psa```  
 
-- get [libmbedtls.a.r3.zip](https://ptonthat.fr/files/polarssl/sources/libmbedtls.a.r3.zip) and unpack the contents of /libmdbedtls.a/ to  
+- get [libmbedtls.a.r4.zip](https://ptonthat.fr/files/polarssl/sources/libmbedtls.a.r4.zip) and unpack the contents of /libmdbedtls.a/ to  
    ```./README.md```  
    ```./Makefile```  
    ```./include/mbedtls/mbedtls_config.h```  
